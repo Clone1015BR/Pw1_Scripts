@@ -23,6 +23,12 @@ function calculaPitagoras(h, ca, co){
     }
 
 }
-console.log("Teste 1: "+calculaPitagoras(0, 21, 20));
-console.log("Teste 2: "+calculaPitagoras(13, 5, 0));
-console.log("Teste 3: "+calculaPitagoras(10, 0, 6));
+
+function abastecePitagoras(){
+    let h = document.getElementById("h").value;
+    let ca = document.getElementById("ca").value;
+    let co = document.getElementById("co").value;
+
+    console.log(calculaPitagoras(h, ca, co));
+    document.getElementById("resultado").innerHTML=calculaPitagoras(h, ca, co)
+}
